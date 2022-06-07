@@ -108,7 +108,7 @@ L7: loop L6
 	mov dl, [esi]
 	loop L5
 
-; printing average result
+; printing out result
 	
 	mov edx, OFFSET prompt3
 	call WriteString
@@ -173,7 +173,7 @@ MOV_ARRAY_VALUE ENDP
 MOV_SUM_VALUE PROC USES edi ebx ecx eax
 ;
 ; Moves value of [ebx] to [edi]
-; Recieves ebx,edi (pointer to data segment value)
+; Receives ebx,edi (pointer to data segment value)
 ; Returns: nothing
 ;--------------------------------------------------------------
 	mov ecx, lengthof temp
@@ -208,7 +208,7 @@ Shift_multiple ENDP
 Display_Num PROC
 ;
 ; Displays the value on the data segment in hexadecimal
-; Recieces: esi(Pointer to the value), ecx(Length of array)
+; Receives: esi(Pointer to the value), ecx(Length of array)
 ; Returns: nothing
 ;--------------------------------------------------------------
 	pushad
