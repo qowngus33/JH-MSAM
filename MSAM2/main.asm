@@ -16,6 +16,7 @@ main PROC
 	mov edx, OFFSET prompt1
 	call WriteString
 	call Crlf
+	call Randomize
 
 ; generating random hex and saving to the array
 
