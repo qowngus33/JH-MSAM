@@ -1,4 +1,5 @@
-# system programmin assembly language assignment
+# system programming assignment
+### assembly language
 
 First, the Irvine library's path was included at the top of the program to use, and several necessary numerical and character arrays were declared on the data segment part.
 
