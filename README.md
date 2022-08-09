@@ -44,7 +44,7 @@ Since the sum of all elements is obtained, divide it by 20 to obtain the average
 	3. If the diviend piece is greater than or equal to the divisor, the quotient is 1 and the remainder is the diviend piece minus the divisor. If there is a previously obtained share, shift one bit to the left to add to the newly obtained share.
 	4. Otherwise, the quotient is zero and the rest is a piece of divisor. If you have a previously obtained share, shift one bit to the left to add to the newly obtained share.
 	5. Take the following bits from the diviend piece and combine them to the back of the rest to make a new fragment of the divisor, and then perform process 2 again.
-  6. Repeat steps 3-6 until there are no more bits left in the diviend.
+  	6. Repeat steps 3-6 until there are no more bits left in the diviend.
 
 <img width="719" alt="Image" src="https://user-images.githubusercontent.com/83813866/183598194-37b89756-fbc6-4034-864b-6b52c4e13726.png">
 
