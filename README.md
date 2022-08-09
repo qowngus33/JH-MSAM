@@ -25,6 +25,8 @@ The Display_sum procedure uses the WriteHexB function of the Irvine library to c
 
 The 20 elements of the array were then added using three procedures: MOV_ARRAY_VALUE, EXTENDED_ADD, and MOV_SUM_VALUE.
 
+<img width="633" alt="스크린샷 2022-08-09 오후 5 13 11" src="https://user-images.githubusercontent.com/83813866/183599170-c34dbcdf-c2ef-4a3b-b304-8505c01d2ece.png">
+
 MOV_ARRAY_VALUE is a procedure that moves the value of the array to temp, and MOV_SUM_VALUE is a procedure that moves the value of the sum to tempSum. array, sum, and tempSum are arrays of a byte size declared on the data segment.
 
 Basically, the sum of all elements in an array array consists of the following processes.
@@ -46,9 +48,9 @@ Since the sum of all elements is obtained, divide it by 20 to obtain the average
 	5. Take the following bits from the diviend piece and combine them to the back of the rest to make a new fragment of the divisor, and then perform process 2 again.
   	6. Repeat steps 3-6 until there are no more bits left in the diviend.
 
+The quotient of sum obtained through the above process divided by 20 is an integer average
+
 <img width="719" alt="Image" src="https://user-images.githubusercontent.com/83813866/183598194-37b89756-fbc6-4034-864b-6b52c4e13726.png">
 
 <img width="1512" alt="스크린샷 2022-06-07 오후 7 40 12" src="https://user-images.githubusercontent.com/83813866/183598042-14e81f05-e53d-461c-b891-55ca2ab85032.png">
-
-
 
